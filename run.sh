@@ -1,5 +1,7 @@
 echo NodeJS `node -v` "+ Cheerio"
 time nodejs ./n2-cheerio.js > ./results/n2-cheerio.csv
+echo NodeJS `node -v` "+ Cheerio"
+time nodejs ./n2-cheerio-64connection.js > ./results/n2-cheerio-64connection.csv
 echo `php -v | grep "PHP 5" | sed -E 's/-(.*)$//'` "+ phpQuery"
 time php ./p1-phpquery.php > ./results/p1-phpquery.csv
 echo `php -v | grep "PHP 5" | sed -E 's/-(.*)$//'` "+ ReactPHP + phpQuery"
